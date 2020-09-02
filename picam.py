@@ -25,11 +25,11 @@ while(True):
     # 이미지를 teachable machine이 학습할 때 사용하는 이미지 비율로 크롭
     crop_image = flip_frame[0:h, int((w-h)/2):int(w-((w-h)/2))]
 
-    # 원본이미지, 플립이미지, 크롭이미지, 추론용(축소)이미지 화면에 보여주기
-    # cv2.imshow('frame',frame)
+    # 원본이미지, 플립이미지, 크롭이미지
+    cv2.imshow('frame',frame)
     # cv2.imshow('flip_frame',flip_frame)
-    cv2.imshow('crop_image',crop_image)
-    # cv2.imshow('image',image)
+    # cv2.imshow('crop_image',crop_image)
+
 
     # 키 입력을 기다림
     key = cv2.waitKey(1) & 0xFF
